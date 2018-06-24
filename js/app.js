@@ -36,6 +36,18 @@ var player = function(x, y) {
 		this.y = y;
 };
 
+player.update = function() {
+
+};
+
+player.render = function() {
+
+};
+
+player.handleInput = function() {
+
+};
+
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
