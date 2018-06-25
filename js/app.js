@@ -32,8 +32,15 @@ Enemy.prototype.render = function() {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 var allEnemies = [];
-var enemy = new Enemy(15, 15, 15);
-allEnemies.push(enemy);
+var enemyOne = new Enemy(100, 60, 15);
+var enemyTwo = new Enemy(300, 60, 15);
+var enemyThree = new Enemy(0, 145, 15);
+var enemyFour = new Enemy(200, 145, 15);
+var enemyFive = new Enemy(100, 228, 15);
+var enemySix = new Enemy(400, 228, 15);
+
+// Push enemies into array allEnemies to make them appear on screen
+allEnemies.push(enemyOne, enemyTwo, enemyThree, enemyFour, enemyFive, enemySix);
 
 // Place the player object in a variable called player
 var Player = function(x, y, speed) {
