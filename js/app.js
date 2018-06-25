@@ -36,17 +36,21 @@ var enemy = new Enemy(15, 15, 15);
 allEnemies.push(enemy);
 
 // Place the player object in a variable called player
-var player = function(x, y) {
+var Player = function(x, y, speed) {
+		this.sprite = 'images/char-boy.png';
 		this.x = x;
 		this.y = y;
+		this.speed = speed;
 };
+
+var player = new Player(30, 50, 10);
 
 player.update = function() {
 
 };
 
 player.render = function() {
-
+		ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 player.handleInput = function() {
