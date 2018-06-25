@@ -83,17 +83,29 @@ player.handleInput = function (pressKey) {
 								this.x += 100;
 						}
 						else {
-							return;
+								return;
 						}
 						break;
 				// Press the up key to move the player one step up on the y-axis
 				case "up":
-						this.y -= 82;
+						if (this.y >= 68) {
+								this.y -= 82;
+						}
+						else {
+								return;
+						}
 						break;
 				// Press the down key to move the player one step down on the y-axis
 				case "down":
-						this.y += 82;
+						if (this.y < 400) {
+								this.y += 82;
+						}
+						else {
+								return;
+						}
 						break;
+				default:
+						return;
 		}
 };
 
