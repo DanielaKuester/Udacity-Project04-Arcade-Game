@@ -77,8 +77,8 @@ player.handleInput = function (pressKey) {
 						break;
 				// Press the right key to move the player one step right on the x-axis
 				case "right":
-						// They player can only move left when (s)he is not in the ultimate
-						// left column
+						// They player can only move right when (s)he is not in the ultimate
+						// right column
 						if (this.x <= 300) {
 								this.x += 100;
 						}
@@ -88,6 +88,7 @@ player.handleInput = function (pressKey) {
 						break;
 				// Press the up key to move the player one step up on the y-axis
 				case "up":
+						// They player can only move up when (s)he is not in the top row
 						if (this.y >= 68) {
 								this.y -= 82;
 						}
@@ -97,6 +98,7 @@ player.handleInput = function (pressKey) {
 						break;
 				// Press the down key to move the player one step down on the y-axis
 				case "down":
+						// They player can only move down when (s)he is not in the bottom row
 						if (this.y < 400) {
 								this.y += 82;
 						}
