@@ -79,13 +79,13 @@ player.handleInput = function (pressKey) {
 				case "right":
 						// They player can only move left when (s)he is not in the ultimate
 						// left column
-							if (this.x <= 300) {
-									this.x += 100;
-							}
-							else {
-								return;
-							}
-							break;
+						if (this.x <= 300) {
+								this.x += 100;
+						}
+						else {
+							return;
+						}
+						break;
 				// Press the up key to move the player one step up on the y-axis
 				case "up":
 						this.y -= 82;
