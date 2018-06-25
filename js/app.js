@@ -60,8 +60,27 @@ player.render = function() {
 		ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
-player.handleInput = function() {
-
+// Insert switch to determine what happens when a key is pressed; switch credits:
+// https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/switch
+player.handleInput = function (pressKey) {
+		switch (pressKey) {
+				// Press the left key to move the player one step left on the x-axis
+				case "left":
+						this.x -= 100;
+						break;
+				// Press the right key to move the player one step right on the x-axis
+				case "right":
+						this.x += 100;
+						break;
+				// Press the up key to move the player one step up on the y-axis
+				case "up":
+						this.y -= 82;
+						break;
+				// Press the down key to move the player one step down on the y-axis
+				case "down":
+						this.y += 82;
+						break;
+		}
 };
 
 
