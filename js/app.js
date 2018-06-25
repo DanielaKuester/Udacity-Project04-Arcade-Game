@@ -43,7 +43,7 @@ var Player = function(x, y, speed) {
 		this.speed = speed;
 };
 
-var player = new Player(30, 50, 10);
+var player = new Player(200, 400, 10);
 
 player.update = function() {
 
