@@ -73,7 +73,9 @@ var Player = function(x, y, speed) {
 var player = new Player(200, 400, 10);
 
 player.update = function() {
-
+		if (player.y <= 71) {
+				console.log("You win!");
+		}
 };
 
 player.render = function() {
