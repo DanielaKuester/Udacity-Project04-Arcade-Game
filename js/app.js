@@ -24,6 +24,18 @@ Enemy.prototype.update = function(dt) {
 		// Update the position and (arbitrary) speed of the enemies
 		this.x += (Math.random() * (this.speed * dt));
 
+		// This condition checks if the distance between an enemy and the player is
+		// less than 60 pixels on the x-axis and less than 15 pixels on the y-axis.
+		// The "Math.abs()"-method makes sure that the distance to both sides of the
+		// objects counts for the collision check.
+		// The collision check is a simplified version of Antonella Dean's
+		// collision check: Copyright (c) 2018 Antonella Bernobich Dean;
+		// https://github.com/aberdean/google-scholarship-fend-projects/tree/master/classic-arcade-game-clone
+		if ((Math.abs(player.x - this.x) <= 60) && (Math.abs(player.y - this.y) <= 15)) {
+				player.x = 200;
+				player.y = 400;
+		}
+
 };
 
 // Draw the enemy on the screen, required method for game
