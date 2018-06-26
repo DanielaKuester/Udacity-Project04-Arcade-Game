@@ -20,12 +20,10 @@ Enemy.prototype.update = function(dt) {
 		if (this.x >= 505) {
 				this.x = -100;
 		}
-		enemyOne.x += (2 * dt);
-		enemyTwo.x += (3 * dt);
-		enemyThree.x += (5 * dt);
-		enemyFour.x += (4 * dt);
-		enemyFive.x += (3.5 * dt);
-		enemySix.x += (2.5 * dt);
+
+		// Update the position and (arbitrary) speed of the enemies
+		this.x += (Math.random() * (this.speed * dt));
+
 };
 
 // Draw the enemy on the screen, required method for game
@@ -41,12 +39,13 @@ Enemy.prototype.render = function() {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 var allEnemies = [];
-var enemyOne = new Enemy(100, 60, 15);
-var enemyTwo = new Enemy(300, 60, 15);
-var enemyThree = new Enemy(0, 145, 15);
-var enemyFour = new Enemy(200, 145, 15);
-var enemyFive = new Enemy(100, 228, 15);
-var enemySix = new Enemy(400, 228, 15);
+// x-position, y-position and (arbitrary!) speed of the enemies
+var enemyOne = new Enemy(100, 60, (Math.random() * 400));
+var enemyTwo = new Enemy(300, 60, (Math.random() * 380));
+var enemyThree = new Enemy(0, 145, (Math.random() * 300));
+var enemyFour = new Enemy(200, 145, (Math.random() * 280));
+var enemyFive = new Enemy(100, 228, (Math.random() * 200));
+var enemySix = new Enemy(400, 228, (Math.random() * 220));
 
 // Push enemies into array allEnemies to make them appear on screen
 allEnemies.push(enemyOne, enemyTwo, enemyThree, enemyFour, enemyFive, enemySix);
