@@ -2,6 +2,15 @@ body {
 		text-align: center;
 }
 
+.heading {
+		font-family: 'Shrikhand', cursive;
+}
+
+.simple-text {
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 1.5rem;
+}
+
 /* The CSS style for the modal box is taken from
  * https://sabe.io/tutorials/how-to-create-modal-popup-box
  */
