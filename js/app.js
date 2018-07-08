@@ -173,6 +173,11 @@ document.addEventListener('keyup', function(e) {
 		player.handleInput(allowedKeys[e.keyCode]);
 });
 
+// Add restart button to the instruction section
+const restart = document.querySelector("#restart");
+		restart.addEventListener("click", function() {
+		window.location.reload();
+});
 
 // This is the JS code for the modal box. The code is taken from
 // https://sabe.io/tutorials/how-to-create-modal-popup-box
@@ -188,8 +193,8 @@ function windowOnClick(event) {
 }
 
 // Add restart button to the modal box
-const restart = document.querySelector("#restart");
-		restart.addEventListener("click", function() {
+const restartModal = document.querySelector("#restart-modal");
+		restartModal.addEventListener("click", function() {
 		window.location.reload();
 });
 
