@@ -1,9 +1,9 @@
-# Memory Game Project
+# Arcade Game Project - A _Frogger_ Clone
 
 ## Table of Contents
 
-* [Instructions: How to Play](#instructions)
-* [Play Online in the Live View](#online)
+* [Instructions](#instructions)
+* [Play Online in the Live View](#play)
 * [Installation](#installation)
 * [Credits](#credits)
 * [External Code used in this Project](#external)
