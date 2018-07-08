@@ -1,3 +1,4 @@
+// TODO: Add reference to study jam by Edoh Kodjo: https://youtu.be/mgFWZGpj3IE?t=1
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
     // Variables applied to each of our instances go here,
@@ -36,6 +37,12 @@ Enemy.prototype.update = function(dt) {
 				player.y = 400;
 		}
 
+/*
+		// When the player reaches the top line, the enemies stop moving
+		if (player.y <= 71) {
+				this.speed = 0;
+		}
+*/
 };
 
 // Draw the enemy on the screen, required method for game
@@ -73,8 +80,11 @@ var Player = function(x, y, speed) {
 var player = new Player(200, 400, 10);
 
 player.update = function() {
+		// When the player reaches the top line, he wins
 		if (player.y <= 71) {
-				console.log("You win!");
+				setTimeout(function () {
+						console.log("You win!");
+				}, 100);
 		}
 };
 
