@@ -2,10 +2,13 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
-* [Play Online](#play Online)
+* [Instructions: How to Play](#instructions)
+* [Play Online in the Live View](#online)
 * [Installation](#installation)
+* [Credits](#credits)
+* [External Code used in this Project](#external)
+* [Acknowledgements](#acknowledgements)
+* [Contributing](#contributing)
 * [License](#license)
 
 ## Instructions: How to Play
