@@ -36,6 +36,19 @@ and the enemies.
 * The fonts are the "Shrikhand" and "Shadows Into Light" fonts taken from [Google Fonts](https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shrikhand).
 * The code for the modal box was taken from [this tutorial](https://sabe.io/tutorials/how-to-create-modal-popup-box) and afterwards adapted to the needs of my Arcade Game project.
 
+## Future Updates
+
+I am planning to update and upgrade the game after my Nanodegree graduation.
+I want to implement the following functions:
+* A new version that is updated to use ES6 code, based on the [Arcade Game Study Jam by Edoh Kodjo](https://youtu.be/mgFWZGpj3IE?t=1)
+* Choosing between different player figures
+* Gems and other collectibles
+* A score board that displays the score, a timer, collected points/gems and life points/hearts
+* A key that has to be collected to win the game
+* Obstacles like in the original _Frogger_ game
+* A bigger canvas that comes nearer to the original _Frogger_
+* Several difficulty levels
+
 ## Acknowledgements
 Big thanks go to my friends and family who support me during all of my projects.
 I also thank the turtle squad on the Udacity/Google Scholarship Slack workspace.
