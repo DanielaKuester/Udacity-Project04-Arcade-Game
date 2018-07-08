@@ -1,16 +1,5 @@
 # Arcade Game Project - A _Frogger_ Clone
 
-## Table of Contents
-
-* [Instructions](#instructions)
-* [Play Online in the Live View](#play)
-* [Installation](#installation)
-* [Credits](#credits)
-* [External Code used in this Project](#external)
-* [Acknowledgements](#acknowledgements)
-* [Contributing](#contributing)
-* [License](#license)
-
 ## Instructions: How to Play
 
 The Arcade Game clone is a little game that is modelled after the well-known
