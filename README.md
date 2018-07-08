@@ -48,6 +48,8 @@ I want to implement the following functions:
 * Obstacles like in the original _Frogger_ game
 * A bigger canvas that comes nearer to the original _Frogger_
 * Several difficulty levels
+Most of these updates will probably be implemented with the help of [Alain Cadenat's Arcade Game Study Jam](https://www.youtube.com/watch?v=0N4HWZ1V8h4&feature=youtu.be)
+and [Alain Cadenat's Arcade Game Project](https://github.com/Alain91530/arcade)
 
 ## Acknowledgements
 Big thanks go to my friends and family who support me during all of my projects.
@@ -66,4 +68,4 @@ For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 (c) Daniela Küster 2018.
 
 This repository is licensed under the [MIT license](https://opensource.org/licenses/MIT).
-For further information see [LICENSE.md](LICENSE.md)
+For further information see [LICENSE](LICENSE)
