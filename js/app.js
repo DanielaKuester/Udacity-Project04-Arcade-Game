@@ -187,6 +187,18 @@ function windowOnClick(event) {
 		}
 }
 
+// Add restart button to the modal box
+const restart = document.querySelector("#restart");
+		restart.addEventListener("click", function() {
+		window.location.reload();
+});
+
+// Add quit game button to the modal box
+const quit = document.querySelector("#quit-game");
+		quit.addEventListener("click", function() {
+		toggleModal();
+});
+
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
