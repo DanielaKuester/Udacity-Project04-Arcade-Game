@@ -98,7 +98,7 @@ player.update = function() {
 						modal.classList.add("show-modal");
 						closeButton.addEventListener("click", toggleModal);
 						window.addEventListener("click", windowOnClick);
-				}, 200);
+				}, 500);
 		}
 };
 
