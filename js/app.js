@@ -1,3 +1,8 @@
+// The variables for the modal box that will appear in the end
+var modal = document.querySelector(".modal");
+var trigger = document.querySelector(".trigger");
+var closeButton = document.querySelector(".close-button");
+
 // TODO: Add reference to study jam by Edoh Kodjo: https://youtu.be/mgFWZGpj3IE?t=1
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
@@ -37,12 +42,10 @@ Enemy.prototype.update = function(dt) {
 				player.y = 400;
 		}
 
-/*
 		// When the player reaches the top line, the enemies stop moving
 		if (player.y <= 71) {
 				this.speed = 0;
 		}
-*/
 };
 
 // Draw the enemy on the screen, required method for game
@@ -82,9 +85,22 @@ var player = new Player(200, 400, 10);
 player.update = function() {
 		// When the player reaches the top line, he wins
 		if (player.y <= 71) {
+				// The player's position is reset after 0.3 seconds
 				setTimeout(function () {
-						console.log("You win!");
-				}, 100);
+						player.x = 200;
+						player.y = 400;
+				}, 200);
+
+				// The modal box appears
+				toggleModal();
+				closeButton.addEventListener("click", toggleModal);
+				window.addEventListener("click", windowOnClick);
+
+				// The player cannot be moved any more
+				player.handleInput = function() {
+					player.x = 200;
+					player.y = 400;
+				}
 		}
 };
 
@@ -156,3 +172,21 @@ document.addEventListener('keyup', function(e) {
 
 		player.handleInput(allowedKeys[e.keyCode]);
 });
+
+
+// This is the JS code for the modal box. The code is taken from
+// https://sabe.io/tutorials/how-to-create-modal-popup-box
+
+function toggleModal() {
+		modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+		if (event.target === modal) {
+				toggleModal();
+		}
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
