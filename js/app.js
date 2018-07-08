@@ -62,12 +62,12 @@ Enemy.prototype.render = function() {
 // Place all enemy objects in an array called allEnemies
 var allEnemies = [];
 // x-position, y-position and (arbitrary!) speed of the enemies
-var enemyOne = new Enemy(-100, 60, (Math.random() * 400));
-var enemyTwo = new Enemy(-350, 60, (Math.random() * 380));
-var enemyThree = new Enemy(-150, 145, (Math.random() * 300));
-var enemyFour = new Enemy(-200, 145, (Math.random() * 280));
-var enemyFive = new Enemy(-180, 228, (Math.random() * 200));
-var enemySix = new Enemy(-120, 228, (Math.random() * 220));
+var enemyOne = new Enemy(-100, 60, (Math.random() * 930));
+var enemyTwo = new Enemy(-350, 60, (Math.random() * 1000));
+var enemyThree = new Enemy(-150, 145, (Math.random() * 720));
+var enemyFour = new Enemy(-200, 145, (Math.random() * 780));
+var enemyFive = new Enemy(-180, 228, (Math.random() * 650));
+var enemySix = new Enemy(-120, 228, (Math.random() * 600));
 
 // Push enemies into array allEnemies to make them appear on screen
 allEnemies.push(enemyOne, enemyTwo, enemyThree, enemyFour, enemyFive, enemySix);
