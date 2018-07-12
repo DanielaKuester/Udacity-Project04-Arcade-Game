@@ -2,18 +2,17 @@
 
 ## Table of Contents
 
-* [Game instructions](#game_instructions)
-* [Contributing](#contributing)
-* [Play Online in the Live View](#play_online_in_the_live_view)
+* [Game instructions](#game-instructions)
+* [Play Online in the Live View](#play-online-in-the-live-view)
 * [Installation](#installation)
 * [Credits](#credits)
-* [External Code Used in this Project](#external_code_used_in_this_project)
-* [Future Updates](#future_updates)
+* [External Code Used in this Project](#external-code-used-in-this-project)
+* [Future Updates](#future-updates)
 * [Acknowledgements](#acknowledgements)
 * [Contributing](#contributing)
 * [License](#license)
 
-## Instructions
+## Game Instructions
 
 The Arcade Game clone is a little game that is modelled after the well-known
 game _Frogger_. You can steer the player with the arrow keys. The goal of the
@@ -28,9 +27,9 @@ You can play the game here: https://danielakuester.github.io/Udacity-Project04-A
 
 ## Installation
 
-Feel free to download the Memory Game to your PC.
-1. Download the resository as a zip-file, extract it and open the index.html to run the Memory Game.
-2. Clone the repository with Git Bash: ```$ git clone https://github.com/DanielaKuester/Udacity-Project04-Arcade-Game```
+Feel free to download the Arcade Game to your PC.
+1. Download the resository as a zip-file, extract it and open the index.html to run the Arcade Game.
+2. Clone the repository with Git Bash: ```$ git clone https://github.com/DanielaKuester/Udacity-Project04-Arcade-Game``` and open the index.html to run the Arcade Game
 
 ## Credits
 
