@@ -84,16 +84,16 @@ var player = new Player(200, 400, 10);
 
 player.update = function() {
 		// When the player reaches the top line, he wins
-		if (player.y <= 71) {
+		if (this.y <= 71) {
 				// The player's position is reset after 0.2 seconds
 				// The player cannot be moved any more
-				player.handleInput = function() {
-						player.x = 200;
-						player.y = 400;
+				this.handleInput = function() {
+						this.x = 200;
+						this.y = 400;
 				}
 				setTimeout(function () {
-						player.x = 200;
-						player.y = 400;
+						this.x = 200;
+						this.y = 400;
 						// Show the modal box
 						modal.classList.add("show-modal");
 						closeButton.addEventListener("click", toggleModal);
