@@ -1,6 +1,19 @@
 # Arcade Game Project - A _Frogger_ Clone
 
-## Instructions: How to Play
+## Table of Contents
+
+* [Game instructions](#game_instructions)
+* [Contributing](#contributing)
+* [Play Online in the Live View](#play_online_in_the_live_view)
+* [Installation](#installation)
+* [Credits](#credits)
+* [External Code Used in this Project](#external_code_used_in_this_project)
+* [Future Updates](#future_updates)
+* [Acknowledgements](#acknowledgements)
+* [Contributing](#contributing)
+* [License](#license)
+
+## Instructions
 
 The Arcade Game clone is a little game that is modelled after the well-known
 game _Frogger_. You can steer the player with the arrow keys. The goal of the
@@ -41,6 +54,7 @@ and the enemies.
 I am planning to update and upgrade the game after my Nanodegree graduation.
 I want to implement the following functions:
 * A new version that is updated to use ES6 code, based on the [Arcade Game Study Jam by Edoh Kodjo](https://youtu.be/mgFWZGpj3IE?t=1)
+* The ES6 version should use a super class to update the player.render-function (see TODO in app.js)
 * Choosing between different player figures
 * Gems and other collectibles
 * A score board that displays the score, a timer, collected points/gems and life points/hearts
