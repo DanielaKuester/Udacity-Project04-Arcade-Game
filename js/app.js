@@ -102,6 +102,21 @@ player.update = function() {
 		}
 };
 
+/* TODO: Update the player.render-function to ES6 with the super class!
+ * A very helpful comment from the code reviewer (implement this in the future):
+ * If we analyse the code, we'll see that Enemy and Player classes have
+ * attributes (x, y, sprite) identical, and the same render() method which has
+ * the basically functionality principles.
+ *
+ * When two or more classes have attributes, and even methods of the same
+ * functionality a good option is to use the inheritance concept of the object
+ * oriented programming languages, where a super class is created and owns all
+ * common attributes and methods of the classes, and the sub-classes inherit
+ * from the super class. In this case, we could make a super class Character
+ * with x, y, sprite attributes, and with the render() method, and the Player
+ * and Enemy classes could be sub-classes that inherit from Character there
+ * common attributes and methods.
+ */
 player.render = function() {
 		ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
